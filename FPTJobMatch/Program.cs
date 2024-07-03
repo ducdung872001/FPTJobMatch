@@ -1,5 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
 using FPTJobMatch.Models;
 using Microsoft.AspNetCore.Identity;
 
@@ -11,12 +10,19 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<FPTJobMatch.Models.DBContext>(options =>
 {
-    options.UseSqlServer("Name=DESKTOP-6I2S90G\\FA23");
+    options.UseSqlServer("Name=TNT-DUNGPD1\\SQLEXPRESS");
 });
 
-    builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<DBContext>();
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false) //Quan trọng
+.AddRoles<IdentityRole>()
+.AddEntityFrameworkStores<DBContext>();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    // Customize the login path here
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+});
 
 var app = builder.Build();
 

@@ -44,7 +44,7 @@ namespace FPTJobMatch.Controllers
             return View(category);
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Employer")]
         public IActionResult Create()
         {
             return View();
@@ -62,7 +62,7 @@ namespace FPTJobMatch.Controllers
             return View(category);
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Employer")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -110,7 +110,7 @@ namespace FPTJobMatch.Controllers
             return View(category);
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Employer")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

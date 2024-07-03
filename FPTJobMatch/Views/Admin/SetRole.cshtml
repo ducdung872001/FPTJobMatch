@@ -1,13 +1,24 @@
-﻿@{
-    ViewData["Title"] = "CreateRole";
-    Layout = "~/Views/Shared/_Layout.cshtml";    
+﻿@model List<string>
+@{
+    ViewData["Title"] = "Set Role";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Create role</h2>
-<form method="post" action="/Admin/CreateRole">
-    <div>
-        <label for="roleName">Role Name:</label>
-        <input type="text" id="roleName" name="roleName" required />
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </div>    
+<h2>@ViewData["Title"]</h2>
+<form method="post" asp-action="SetRole" asp-controller="Admin">
+    <label for="userId">User:</label>
+    <select id="userId" name="userId">
+        @foreach (var userId in Model)
+        {
+            <option value="@userId">@userId</option>
+        }
+    </select>
+
+    <label for="role">Role: </label>
+    <select id="role" name="role">
+        <option value="Admin">Admin</option>
+        <option value="Employer">Employer</option>
+        <option value="Seeker">Seeker</option>
+    </select>
+    <button class="btn btn-primary" type="submit">Set Role</button>
 </form>

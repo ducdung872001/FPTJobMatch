@@ -1,19 +1,21 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using FPTJobMatch.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Text;
 
 namespace FPTJobMatch.Controllers
 {
     public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AccountController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
+        public AccountController(UserManager<IdentityUser> userManager,
+            SignInManager<IdentityUser> signInManager,
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
             _roleManager = roleManager;
         }
         public IActionResult Index()
@@ -21,86 +23,59 @@ namespace FPTJobMatch.Controllers
             return View();
         }
 
-        //[Authorize(Roles = "Admin")]
         [HttpGet]
-        public async Task<IActionResult> SetRole()
+        public IActionResult Register()
         {
-            var users = await _userManager.Users.Select(u => u.UserName).ToListAsync();
-            return View(users);
+            return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> SetRole(string userId, string role)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            var user = await _userManager.FindByNameAsync(userId);
-            if (user == null)
+            if (ModelState.IsValid)
             {
-                return NotFound("This user does not exist.");
+                var user = new IdentityUser { UserName = model.Email, Email = model.Email };
+                var result = await _userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction("Index", "Home");
+                }
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
             }
-
-            var roleExists = await _roleManager.RoleExistsAsync(role);
-            if (!roleExists)
-            {
-                return NotFound("This role does not exist.");
-            }
-
-            await _userManager.AddToRoleAsync(user, role);
-
-            return RedirectToAction("Index");
+            return View(model);
         }
 
-        //[Authorize(Roles = "Admin")]
-        public async Task<IActionResult> UserList()
+        [HttpGet]
+        public IActionResult Login()
         {
-            //var users = await _userManager.Users.ToListAsync();
-            return View(); //users
+            return View();
         }
 
-        public async Task<IActionResult> ResetPassword(string userId)
+        [HttpPost]        
+        public async Task<IActionResult> Login(LoginViewModel model)
         {
-            var user = await _userManager.FindByIdAsync(userId);
-            if (user == null)
+            if (ModelState.IsValid)
             {
-                return NotFound();
+                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
             }
-
-            var newPassword = GenerateRandomPassword();
-
-            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-            var result = await _userManager.ResetPasswordAsync(user, token, newPassword);
-            if (!result.Succeeded)
-            {
-                return BadRequest();
-            }
-
-            TempData["NewPassword"] = newPassword;
-
-            return RedirectToAction("UserList");
+            return View(model);
         }
 
-        private string GenerateRandomPassword()
+        [HttpGet]
+        public async Task<IActionResult> Logout()
         {
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
-
-            var random = new Random();
-            var upperIndex = random.Next(0, 25);
-            var specialIndex = random.Next(52, 61);
-            var digitIndex = random.Next(62, 71);
-
-            var password = new StringBuilder();
-            password.Append(chars[random.Next(0, 25)]);
-            password.Append(chars[random.Next(26, 51)]);
-            password.Append(chars[random.Next(52, 61)]);
-            password.Append(chars[random.Next(62, 71)]);
-
-            for (int i = 4; i < 8; i++)
-            {
-                password.Append(chars[random.Next(chars.Length)]);
-            }
-
-            var shuffledPassword = new string(password.ToString().OrderBy(x => random.Next()).ToArray());
-
-            return shuffledPassword;
-        }
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }        
     }
 }

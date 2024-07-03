@@ -1,10 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Khanh\\OneDrive\\Documents\\1670 Application Development\\FPTJobMatch\\",
+  "WorkspaceRootPath": "D:\\Git\\Training\\FPTJobMatch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|c:\\users\\khanh\\onedrive\\documents\\1670 application development\\fptjobmatch\\fptjobmatch\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|solutionrelative:fptjobmatch\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|d:\\git\\training\\fptjobmatch\\fptjobmatch\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|solutionrelative:fptjobmatch\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|d:\\git\\training\\fptjobmatch\\fptjobmatch\\views\\admin\\setrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|solutionrelative:fptjobmatch\\views\\admin\\setrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|d:\\git\\training\\fptjobmatch\\fptjobmatch\\views\\admin\\rolelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|solutionrelative:fptjobmatch\\views\\admin\\rolelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|d:\\git\\training\\fptjobmatch\\fptjobmatch\\views\\admin\\createrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|solutionrelative:fptjobmatch\\views\\admin\\createrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|d:\\git\\training\\fptjobmatch\\fptjobmatch\\views\\admin\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|solutionrelative:fptjobmatch\\views\\admin\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|d:\\git\\training\\fptjobmatch\\fptjobmatch\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|solutionrelative:fptjobmatch\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|d:\\git\\training\\fptjobmatch\\fptjobmatch\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|solutionrelative:fptjobmatch\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +38,97 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Profile.cs",
-              "DocumentMoniker": "C:\\Users\\Khanh\\OneDrive\\Documents\\1670 Application Development\\FPTJobMatch\\FPTJobMatch\\Models\\Profile.cs",
-              "RelativeDocumentMoniker": "FPTJobMatch\\Models\\Profile.cs",
-              "ToolTip": "C:\\Users\\Khanh\\OneDrive\\Documents\\1670 Application Development\\FPTJobMatch\\FPTJobMatch\\Models\\Profile.cs",
-              "RelativeToolTip": "FPTJobMatch\\Models\\Profile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "DocumentIndex": 1,
+              "Title": "SetRole.cshtml",
+              "DocumentMoniker": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Views\\Admin\\SetRole.cshtml",
+              "RelativeDocumentMoniker": "FPTJobMatch\\Views\\Admin\\SetRole.cshtml",
+              "ToolTip": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Views\\Admin\\SetRole.cshtml",
+              "RelativeToolTip": "FPTJobMatch\\Views\\Admin\\SetRole.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswBEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-03T19:10:51.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserList.cshtml",
+              "DocumentMoniker": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Views\\Admin\\UserList.cshtml",
+              "RelativeDocumentMoniker": "FPTJobMatch\\Views\\Admin\\UserList.cshtml",
+              "ToolTip": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Views\\Admin\\UserList.cshtml",
+              "RelativeToolTip": "FPTJobMatch\\Views\\Admin\\UserList.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-03T19:03:05.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "FPTJobMatch\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "FPTJobMatch\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAmwFcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T05:19:18.376Z",
+              "WhenOpened": "2024-07-03T18:56:08.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateRole.cshtml",
+              "DocumentMoniker": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Views\\Admin\\CreateRole.cshtml",
+              "RelativeDocumentMoniker": "FPTJobMatch\\Views\\Admin\\CreateRole.cshtml",
+              "ToolTip": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Views\\Admin\\CreateRole.cshtml",
+              "RelativeToolTip": "FPTJobMatch\\Views\\Admin\\CreateRole.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-03T18:57:24.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "FPTJobMatch\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "FPTJobMatch\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAmwFUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:56:11.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleList.cshtml",
+              "DocumentMoniker": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Views\\Admin\\RoleList.cshtml",
+              "RelativeDocumentMoniker": "FPTJobMatch\\Views\\Admin\\RoleList.cshtml",
+              "ToolTip": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Views\\Admin\\RoleList.cshtml",
+              "RelativeToolTip": "FPTJobMatch\\Views\\Admin\\RoleList.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswBcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-03T18:55:18.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "FPTJobMatch\\Models\\Role.cs",
+              "ToolTip": "D:\\Git\\Training\\FPTJobMatch\\FPTJobMatch\\Models\\Role.cs",
+              "RelativeToolTip": "FPTJobMatch\\Models\\Role.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:52:47.692Z",
               "EditorCaption": ""
             }
           ]

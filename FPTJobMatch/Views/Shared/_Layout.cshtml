@@ -55,7 +55,7 @@
                         {
                             <li class="nav-item">
                                 <button type="submit" class="btn btn-secondary">
-                                    <a href="Identity">
+                                    <a asp-controller="Account" asp-action="Logout">
                                         Sign Out @User?.Identity?.Name
                                     </a>
                                 </button>
@@ -64,12 +64,12 @@
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link" href="Register">
+                                <a class="nav-link" asp-controller="Account" asp-action="Register">
                                     Sign Up
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Identity">
+                                <a class="nav-link" asp-controller="Account" asp-action="Login">
                                     Sign In
                                 </a>
                             </li>
@@ -97,7 +97,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a asp-action="UserList" asp-controller="Account" class="nav-link">
+                                    <a asp-action="UserList" asp-controller="Admin" class="nav-link">
                                         <p>Users</p>
                                     </a>
                                 </li>                                

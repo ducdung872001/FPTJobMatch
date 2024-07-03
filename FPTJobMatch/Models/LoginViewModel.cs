@@ -6,11 +6,15 @@ namespace FPTJobMatch.Models
     {
         [Required]
         [EmailAddress]
-        public required string Email { get; set; }
+        [Display(Name = "Email")]
+        public string Email { get; set; }
+
         [Required]
         [DataType(DataType.Password)]
-        public required string Password { get; set; }
-        [Display(Name = "Remember me")]
+        [Display(Name = "Password")]
+        public string Password { get; set; }
+
+        [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
     }
 }

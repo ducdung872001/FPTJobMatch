@@ -64,7 +64,7 @@ namespace FPTJobMatch.Controllers
         }
 
         // GET: Jobs/Create
-        // [Authorize(Roles = "Employer")]
+        [Authorize(Roles = "Employer")]
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
@@ -85,7 +85,7 @@ namespace FPTJobMatch.Controllers
         }
 
         // GET: Jobs/Edit/5
-        //[Authorize(Roles = "Employer")]
+        [Authorize(Roles = "Employer")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -136,7 +136,7 @@ namespace FPTJobMatch.Controllers
         }
 
         // GET: Jobs/Delete/5
-        //[Authorize(Roles = "Employer")]
+        [Authorize(Roles = "Employer")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
