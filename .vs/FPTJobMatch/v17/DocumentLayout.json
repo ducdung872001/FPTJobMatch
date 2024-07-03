@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Khanh\\OneDrive\\Documents\\1670 Application Development\\FPTJobMatch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|c:\\users\\khanh\\onedrive\\documents\\1670 application development\\fptjobmatch\\fptjobmatch\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0021DE-2A2A-44AB-8123-7DE26F15A7EE}|FPTJobMatch\\FPTJobMatch.csproj|solutionrelative:fptjobmatch\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\Users\\Khanh\\OneDrive\\Documents\\1670 Application Development\\FPTJobMatch\\FPTJobMatch\\Models\\Profile.cs",
+              "RelativeDocumentMoniker": "FPTJobMatch\\Models\\Profile.cs",
+              "ToolTip": "C:\\Users\\Khanh\\OneDrive\\Documents\\1670 Application Development\\FPTJobMatch\\FPTJobMatch\\Models\\Profile.cs",
+              "RelativeToolTip": "FPTJobMatch\\Models\\Profile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T05:19:18.376Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

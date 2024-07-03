@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "CreateRole";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+<h2>Create role</h2>
+<form method="post" action="/Admin/CreateRole">
+    <div>
+        <label for="roleName">Role Name:</label>
+        <input type="text" id="roleName" name="roleName" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>    
+</form>
